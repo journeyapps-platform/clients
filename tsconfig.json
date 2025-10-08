@@ -2,22 +2,7 @@
   "files": [],
   "references": [
     {
-      "path": "./packages/docs"
-    },
-    {
-      "path": "./packages/ioc"
-    },
-    {
-      "path": "./packages/tree"
-    },
-    {
-      "path": "./packages/logger"
-    },
-    {
-      "path": "./packages/utils"
-    },
-    {
-      "path": "./packages/sdk"
+      "path": "./packages/backend-v4"
     }
   ]
 }
