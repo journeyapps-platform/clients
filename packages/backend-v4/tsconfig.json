@@ -5,12 +5,5 @@
     "rootDir": "src",
     "outDir": "dist"
   },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.json"
-  ],
-  "references": [{
-    "path": "../utils"
-  }]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.json"]
 }
