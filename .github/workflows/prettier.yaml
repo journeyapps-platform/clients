@@ -1,6 +1,5 @@
 name: Prettier check
 
-# This action works with pull requests and pushes
 on:
   pull_request:
 
@@ -8,8 +7,9 @@ jobs:
   prettier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: Nerixyz/actionsx-prettier@v3-adj
-        with:
-          args: --check --ignore-path .prettierignore --config .prettierrc '**/*.{ts,tsx,js,jsx}'
+      - uses: ./.github/actions/setup-node-pnpm
+
+      - name: Prettier
+        run: pnpm prettier --check --ignore-path .prettierignore --config .prettierrc '**/*.{ts,tsx,js,jsx}'
